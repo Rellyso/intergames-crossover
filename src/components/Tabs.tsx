@@ -10,20 +10,20 @@ interface Tab {
 const tabs: Tab[] = [
   {
     title: "Leadboard - Nível 1",
-    value: "tab2",
+    value: "tab1",
   },
   {
     title: "Leadboard - Nível 2",
-    value: "tab3",
+    value: "tab2",
   },
 
   {
     title: "Leadboard - Nível 3",
-    value: "tab4",
+    value: "tab3",
   },
   {
     title: "Cronograma",
-    value: "tab1",
+    value: "tab4",
   },
 ];
 
@@ -70,10 +70,10 @@ const Tabs = (props: Props) => {
           <span className="text-sm text-zinc-100">
             {
               {
-                tab1: <TabTimeline />,
-                tab2: <TabWorkoutOne />,
-                tab3: <TabWorkoutTwo />,
-                tab4: <TabWorkoutThree />,
+                tab1: <TabWorkoutOne />,
+                tab2: <TabWorkoutTwo />,
+                tab3: <TabWorkoutThree />,
+                tab4: <TabTimeline />,
               }[value]
             }
           </span>
