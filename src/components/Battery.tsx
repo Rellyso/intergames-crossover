@@ -12,7 +12,7 @@ export function Battery({ name, lanes }: IBattery) {
           const laneNumber = `0${i + 1}`
           return (
             <div key={lane} className='flex gap-1'>
-              <span className='text-crossover font-bold'>Raia {laneNumber}:</span>
+              {lanes.length > 1 && <span className='text-crossover font-bold'>Raia {laneNumber}:</span>}
               <span>{lane}</span>
             </div>
           )
