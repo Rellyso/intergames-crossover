@@ -54,6 +54,7 @@ const Tabs = (props: Props) => {
               className={cx(
                 "text-sm font-semibold",
                 "md:text-md",
+                "lg:text-lg",
                 "text-crossover"
               )}
             >
