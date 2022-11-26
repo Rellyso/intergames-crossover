@@ -4,7 +4,15 @@ module.exports = {
     "./src/**/*.{html,tsx}"
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': ['Inter', 'sans-serif', 'ui-sans-serif', 'system-ui']
+    },
+
+    extend: {
+      colors: {
+        crossover: '#009340FF'
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-radix")()],
 }
