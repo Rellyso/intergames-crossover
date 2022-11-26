@@ -48,7 +48,7 @@ function App() {
       </header>
 
       <div
-        className='flex items-center flex-1 flex-col w-full gap-8 mt-16 py-12'
+        className='flex items-center flex-1 flex-col w-full gap-8 mt-16 py-12 max-w-screen px-2'
       >
         <img
           className='w-56 object-contain'

@@ -9,16 +9,16 @@ interface Tab {
 
 const tabs: Tab[] = [
   {
-    title: "Leadboard - Nível 1",
+    title: "Nível 1",
     value: "tab1",
   },
   {
-    title: "Leadboard - Nível 2",
+    title: "Nível 2",
     value: "tab2",
   },
 
   {
-    title: "Leadboard - Nível 3",
+    title: "Nível 3",
     value: "tab3",
   },
   {
@@ -33,7 +33,7 @@ const Tabs = (props: Props) => {
   return (
     <TabsPrimitive.Root defaultValue="tab1">
       <TabsPrimitive.List
-        className={cx("flex w-full rounded-t-lg bg-zinc-200")}
+        className={cx("flex max-w-screen rounded-t-lg bg-zinc-200 mx-2 wrap")}
       >
         {tabs.map(({ title, value }) => (
           <TabsPrimitive.Trigger
@@ -52,7 +52,8 @@ const Tabs = (props: Props) => {
           >
             <span
               className={cx(
-                "text-md font-semibold",
+                "text-sm font-semibold",
+                "md:text-md",
                 "text-crossover"
               )}
             >
@@ -65,7 +66,7 @@ const Tabs = (props: Props) => {
         <TabsPrimitive.Content
           key={`tab-content-${value}`}
           value={value}
-          className={cx("rounded-b-lg px-6 py-4 bg-zinc-800 min-h-[120px]")}
+          className={cx("rounded-b-lg px-6 py-4 bg-zinc-200 min-h-[120px] mx-2")}
         >
           <span className="text-sm text-zinc-100">
             {
@@ -87,7 +88,7 @@ const Tabs = (props: Props) => {
 const TabTimeline = () => {
   return (
     <div>
-      <p className="text-sm text-zinc-200">Horário das provas, baterias, raias, times:</p>
+      <p className="text-sm text-zinc-900 font-semibold">Horário das provas, baterias, raias, times:</p>
       <a
         href="https://docs.google.com/document/d/1t4v69rYENgFQocR5mUVpZ1WqYS--KQvU/edit?usp=share_link&ouid=100703017116547237526&rtpof=true&sd=true"
         target='blank'
@@ -102,7 +103,7 @@ const TabTimeline = () => {
 const TabWorkoutOne = () => {
   return (
     <div>
-      <p className="text-sm text-zinc-200">Acompanhe a classificação, pontuação em provas, reaja e comente:</p>
+      <p className="text-sm text-zinc-900 font-semibold">Acompanhe a classificação, pontuação em provas, reaja e comente:</p>
       <a
         href="https://keepthescore.co/board/ghzrfrmrkwr/"
         target='blank'
@@ -117,7 +118,7 @@ const TabWorkoutOne = () => {
 const TabWorkoutTwo = () => {
   return (
     <div>
-      <p className="text-sm text-zinc-200">Acompanhe a classificação, pontuação em provas, reaja e comente:</p>
+      <p className="text-sm text-zinc-900 font-semibold">Acompanhe a classificação, pontuação em provas, reaja e comente:</p>
       <a
         href="https://keepthescore.co/board/ebkrbacnvgr/"
         target='blank'
@@ -132,7 +133,7 @@ const TabWorkoutTwo = () => {
 const TabWorkoutThree = () => {
   return (
     <div>
-      <p className="text-sm text-zinc-200">Acompanhe a classificação, pontuação em provas, reaja e comente:</p>
+      <p className="text-sm text-zinc-900 font-semibold">Acompanhe a classificação, pontuação em provas, reaja e comente:</p>
       <a
         href="https://keepthescore.co/board/tmuudsapqmr/"
         target='blank'
