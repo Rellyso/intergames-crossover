@@ -110,7 +110,7 @@ const TabWorkoutOne = () => {
         target='blank'
         className='text-crossover font-bold hover:text-green-600 hover:decoration-slate-50 flex items-center gap-1'
       >
-        <Link weight="bold" /> acesse o leadboard do nível 1
+        <Link weight="bold" /> Acessar leadboard do nível 1
       </a>
     </div>
   )
@@ -125,7 +125,7 @@ const TabWorkoutTwo = () => {
         target='blank'
         className='text-crossover font-bold hover:text-green-600 hover:decoration-slate-50 flex items-center gap-1'
       >
-        <Link weight="bold" /> acesse o leadboard do nível 2
+        <Link weight="bold" />Acessar leadboard do nível 2
       </a>
     </div>
   )
@@ -140,7 +140,7 @@ const TabWorkoutThree = () => {
         target='blank'
         className='text-crossover font-bold hover:text-green-600 hover:decoration-slate-50 flex items-center gap-1'
       >
-        <Link weight="bold" /> acesse o leadboard do nível 3
+        <Link weight="bold" /> Acessar leadboard do nível 3
       </a>
     </div>
   )

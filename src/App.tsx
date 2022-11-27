@@ -261,7 +261,7 @@ function App() {
                     workout='Prova 04'
                     batteries={[
                       {
-                        name: '09:10 - Bateria 01',
+                        name: '12:00 - Bateria 01',
                         lanes: [
                           'RAFAEL ESCOLASTICO',
                           'ELOIZA ELENA',
@@ -269,7 +269,7 @@ function App() {
                         ],
                       },
                       {
-                        name: '09:30 - Bateria 02',
+                        name: '12:10 - Bateria 02',
                         lanes: [
                           'TERLAN',
                           'STEFANNY ANA',
@@ -278,7 +278,7 @@ function App() {
                         ],
                       },
                       {
-                        name: '09:50 - Bateria 03',
+                        name: '12:20 - Bateria 03',
                         lanes: [
                           'ECLEUDO',
                           'LUAN HENRIQUE',
