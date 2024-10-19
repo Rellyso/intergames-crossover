@@ -1,6 +1,6 @@
 import './styles/global.css'
 
-import whiteLogo from './assets/logo-branco.png'
+import Logo from './assets/logo-2024-verde.png'
 import Tabs from './components/Tabs'
 import cx from 'classnames'
 import { CalendarBlank, Trophy } from 'phosphor-react'
@@ -17,16 +17,16 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col bg-zinc-900 max-w-screen w-full min-h-screen">
-      <header
-        className='flex items-center justify-center h-16 border-b bg-zinc-900 border-b-zinc-700 w-full fixed top-0'
+    <div className="flex flex-col bg-zinc-100 max-w-screen w-full min-h-screen">
+      {/* <header
+        className='flex items-center justify-center h-16 border-b bg-zinc-100 border-b-zinc-300 w-full fixed top-0'
       >
         <button
           className={cx([
-            'h-full text-zinc-200 px-4',
+            'h-full text-zinc-900 px-4',
             'transition-colors',
-            'hover:bg-zinc-700',
-            selectedMenu === 'inicio' ? 'bg-zinc-800' : 'bg-zinc-900',
+            'hover:bg-zinc-200',
+            selectedMenu === 'inicio' ? 'bg-zinc-200' : 'bg-zinc-100',
           ])}
 
           onClick={() => handleChangeSelectedMenu('inicio')}
@@ -35,32 +35,32 @@ function App() {
         </button>
         <button
           className={cx([
-            'h-full text-zinc-200 px-4',
+            'h-full text-zinc-900 px-4',
             'transition-colors',
-            'hover:bg-zinc-700',
-            selectedMenu === 'horarios' ? 'bg-zinc-800' : 'bg-zinc-900',
+            'hover:bg-zinc-200',
+            selectedMenu === 'horarios' ? 'bg-zinc-200' : 'bg-zinc-100',
           ])}
 
           onClick={() => handleChangeSelectedMenu('horarios')}
         >
           Horários
         </button>
-      </header>
+      </header> */}
 
       <div
-        className='flex items-center flex-1 flex-col w-full gap-8 mt-16 py-12 max-w-screen px-2'
+        className='flex items-center flex-1 flex-col w-full gap-8 mt-6 py-12 max-w-screen px-2'
       >
         <img
           className='w-56 object-contain'
-          src={whiteLogo}
-          alt="inter games 2022, terceira edição, by crossover"
+          src={Logo}
+          alt="inter games 2023, quarta edição, by crossover"
         />
 
         <div className='flex w-full flex-col items-center'>
-          <h1 className='text-white text-2xl font-bold font-sans'>
-            {selectedMenu === 'inicio' ? 'INTER GAMES 2022' : 'HORÁRIOS'}
+          <h1 className='text-zinc-900 text-2xl font-bold font-roboto'>
+            {selectedMenu === 'inicio' ? 'INTER GAMES 2024' : 'HORÁRIOS'}
           </h1>
-          <p className='text-zinc-400'>
+          <p className='text-zinc-600'>
             {selectedMenu === 'inicio'
               ? 'Acesse o link da classificação de cada nível abaixo'
               : 'Confira os horários de provas abaixo'
@@ -443,9 +443,9 @@ function App() {
       </div>
 
       <footer
-        className='h-16 border-t border-t-zinc-700 w-full flex align-center justify-center'
+        className='h-16 border-t border-t-zinc-300 w-full flex align-center justify-center'
       >
-        <span className='flex text-zinc-300 self-center justify-center'>
+        <span className='flex text-zinc-600 self-center justify-center font-medium'>
           powered by
           <a
             href="http://instagram.com/rellysondouglaas"

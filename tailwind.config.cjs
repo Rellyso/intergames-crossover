@@ -5,7 +5,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Inter', 'sans-serif', 'ui-sans-serif', 'system-ui']
+      'sans': ['Roboto', 'sans-serif', 'ui-sans-serif', 'system-ui'],
+      'inter': ['Inter', 'sans-serif', 'ui-sans-serif', 'system-ui']
     },
 
     extend: {
